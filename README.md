@@ -1,7 +1,7 @@
 # A Dracula theme for Rofi, along with a Bash script for a power menu.
 
 
-## Screanshot
+## Screenshot
 <img width="419" height="269" alt="изображение" src="https://github.com/user-attachments/assets/74772610-4e11-4016-8518-bac3dc8c742c" />
 
 ## What is Rofi?
