@@ -1,0 +1,73 @@
+/**
+ * Dracula Strict (No Border Radius)
+ */
+
+configuration {
+    show-icons: false;
+}
+
+/* ---------- COLORS (Dracula) ---------- */
+* {
+    background:        #282a36;
+    background-alt:    #44475a;
+    foreground:        #f8f8f2;
+    selected:          #bd93f9;
+    urgent:            #ff5555;
+    active:            #50fa7b;
+}
+
+/* ---------- WINDOW ---------- */
+window {
+    location: center;
+    anchor: center;
+
+    width: 420px;
+    fullscreen: false;
+
+    border: 0px;
+    border-radius: 0px;
+
+    background-color: @background;
+}
+
+/* ---------- MAIN ---------- */
+mainbox {
+    spacing: 6px;
+    padding: 10px;
+    background-color: @background;
+    children: [ listview ];
+}
+
+/* ---------- LIST ---------- */
+listview {
+    columns: 1;
+    lines: 5;
+    spacing: 4px;
+    background-color: transparent;
+}
+
+/* ---------- ELEMENT ---------- */
+element {
+    padding: 14px 16px;
+
+    border: 0px;
+    border-radius: 0px;          /* ❗ полностью без скруглений */
+
+    background-color: @background-alt;
+    text-color: @foreground;
+}
+
+/* ---------- TEXT ---------- */
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+
+    horizontal-align: 0.0;       /* ❗ строгий левый край */
+    vertical-align: 0.5;
+}
+
+/* ---------- SELECTED ---------- */
+element selected.normal {
+    background-color: @selected;
+    text-color: #282a36;
+}
